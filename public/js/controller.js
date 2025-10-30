@@ -1,6 +1,6 @@
 const url = "localhost:8080/"
 
-async function sendMessage(){
+async function PostMessage(){
     const content = document.getElementById("msg").value
     const sender = document.getElementById("name").value
 
