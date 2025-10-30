@@ -10,7 +10,7 @@ async function sendMessage(){
         body: JSON.stringify({"content": content, "sender":sender})
     })
     let json = await res.json()
-    console.log(json  );
-    
-
+    console.log(json);
 }
+
+
