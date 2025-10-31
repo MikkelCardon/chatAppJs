@@ -1,6 +1,6 @@
 async function createRoom(){
     let res = await fetch("/room/create", {
-        
+        method: "POST"
     })
     
     if(!res.ok){
