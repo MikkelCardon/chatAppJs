@@ -21,7 +21,7 @@ app.use(express.json()); //JSON as body in requests
 app.use(express.static(path.join(__dirname, "public"))); // Serve all static files from the 'public' directory
 app.use('/', routes);
 
-const rooms = new Map()
+export const rooms = new Map()
 
 // WebSocket connection handler
 wss.on('connection', (ws) => {

@@ -3,35 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Frontpage</title>
     <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
 </head>
 <body>
+    <div class="wrapper">
+  <div class="box">
+    <h3>Name</h3>
+    <input type="text" placeholder="name" id="name">
+  </div>
 
-    <header-section>
-        <h1>DIN CHAT</h1>
-        <p>ER IKKE KRYPTERET OG DINE BESKEDER OPBEVARES</p>
-        <p style="font-size: 6px; margin-top: 0;">DIN DATA SÆLGES MULIGVIS</p>
-    </header-section>
+  <div class="flex-container">
+    <div class="box">
+      <h3>JOIN ROOM</h3>
+      <input type="text" placeholder="room-id">
+      <button>JOIN</button>
+    </div>
+    <div class="box">
+      <h3>CREATE ROOM</h3>
+      <button onclick="createRoom()">CREATE</button>
+    </div>
+  </div>
+</div>
 
-    <section class="chat-section">
-        <div class="chat-header">
-            <h3>CHAT RUM</h3>
-            <div id="chatId">12</div>
-            <input id="name" type="text">
-        </div>
-
-        <div class="message-section" id="message-section">
-            <!-- HER KOMMER MESSAGE IND -->
-        </div>
-    </section>
-    <input-section>
-        <input id="msg" type="text">
-        <button onclick="sendMessage()">Send</button>
-    </input-section>
-    
-
-    <script src="js/controller.js"></script>
-    <script src="js/socket.js"></script>
+<script src="js/frontController.js"></script>
 </body>
 </html>

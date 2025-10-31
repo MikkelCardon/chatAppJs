@@ -12,6 +12,7 @@
   "type": "module",
   "dependencies": {
     "express": "^5.1.0",
+    "figlet": "^1.9.3",
     "ws": "^8.18.3"
   }
 }
