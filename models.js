@@ -11,7 +11,7 @@ export class Message{
 
 export class Room {
   constructor() {
-    this.id = getRandomInt(10000, 99999)
+    this.id = String(getRandomInt(10000, 99999))
     this.clients = new Set(); // WebSocket connections for this room
   }
 
