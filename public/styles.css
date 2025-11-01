@@ -111,3 +111,48 @@ header-section p {
 input-section{
   height: 10%;
 }
+
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;   
+  justify-content: center; 
+  height: 100vh;
+}
+
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-container .box{
+    height: 100px;
+}
+
+
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  border: solid 1px black;
+  border-radius: 20px;
+  background-color: lightblue;
+  padding: 25px;
+  margin: 25px;
+}
+
+
+.box button {
+  width: 100px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.box > * {
+  margin: 10px 0;
+}

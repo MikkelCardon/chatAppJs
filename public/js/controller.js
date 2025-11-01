@@ -1,6 +1,9 @@
 const url = "localhost:8080/"
 
-async function sendMessage(){
+let username = "Guest"
+let roomId = 0
+
+async function PostMessage(){
     const content = document.getElementById("msg").value
     const sender = document.getElementById("name").value
 
@@ -14,3 +17,12 @@ async function sendMessage(){
 }
 
 
+window.addEventListener("load", () =>{
+    username  = localStorage.getItem('name');
+    roomId = localStorage.getItem("roomId")
+
+    console.log(username, roomId);
+    
+    document.getElementById("chatId").textContent = roomId
+    joinRoom(roomId)
+})

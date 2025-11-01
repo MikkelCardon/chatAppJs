@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontpage</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header-section>
+        <h1>DIN CHAT</h1>
+        <p>ER IKKE KRYPTERET OG DINE BESKEDER OPBEVARES</p>
+        <p style="font-size: 6px; margin-top: 0;">DIN DATA SÆLGES MULIGVIS</p>
+    </header-section>
+
+    <section class="chat-section">
+        <div class="chat-header">
+            <h3>CHAT RUM</h3>
+            <div id="chatId"></div>
+        </div>
+
+        <div class="message-section" id="message-section">
+            <!-- HER KOMMER MESSAGE IND -->
+        </div>
+    </section>
+    <input-section>
+        <input id="msg" type="text">
+        <button onclick="sendMessage()">Send</button>
+    </input-section>
+    
+
+    <script src="js/controller.js"></script>
+    <script src="js/socket.js"></script>
+</body>
+</html>
